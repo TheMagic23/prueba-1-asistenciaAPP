@@ -1,0 +1,13 @@
+<section>
+  <fieldset>
+    <label for=""> Ingrese el nombre de la Seccion</label>
+    <input
+    type="text"
+    name="seccion"
+    [value]="seccion.nombreSeccion"
+    (input)="cambiarSeccion($event)">
+  </fieldset>
+  <fieldset>
+    <button (click)="guardar()">Crear clase</button>
+  </fieldset>
+</section>

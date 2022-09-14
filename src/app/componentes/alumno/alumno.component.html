@@ -1,0 +1,12 @@
+<article [id]="alumno.idAl">
+
+  <fieldset>
+    <h2> Historial de Alumno</h2>
+    <h3> Rut del Alumno :  {{alumno.rut}}</h3>
+    <h3> Nombre completo del Alumno: {{ alumno.nombre | uppercase}}  {{alumno.apellido | lowercase}}</h3>
+    <h3>Edad del Alumno : {{alumno.edad}}</h3>
+    <h3> Tipo d seccion del Alumno: {{alumno.tipo}}</h3>
+    <h3> fecha y hora : {{ fecha| date: "d/M/YYYY HH:mm"}}</h3>
+
+  </fieldset>
+</article>

@@ -1,0 +1,48 @@
+<section>
+  <fieldset>
+    <label for=""> Ingrese el Rut del alumno</label>
+    <input type="text"
+    name="rut"
+    [value]="alumno.rut"
+    (input)="cambiarRut($event)">
+  </fieldset>
+  <fieldset>
+    <label for="">Ingrese el Nombre del alumno</label>
+    <input
+    type="text"
+    name="nombre"
+    [value]="alumno.nombre"
+    (input)="cambiarNombre($event)"
+    >
+  </fieldset>
+  <fieldset>
+    <label for=""> Ingrese el Apellido del Alumno </label>
+    <input type="text"
+    name="apellido"
+    [value]="alumno.apellido"
+    (input)="cambiarApellido">
+  </fieldset>
+  <fieldset>
+  <label for="">Ingrese la Edad del alumno</label>
+   <input
+   type="number"
+   name="edad"
+   [value]="alumno.edad"
+   (input)="cambioEdad($event)"
+   >
+  </fieldset>
+   <fieldset>
+    <label for="">Tipo de Seccion</label>
+    <select
+     name="tipo"
+     [value]="alumno.tipo"
+     (input)="cambiarTipo($event)">
+    <option value="Precencial">Precencial</option>
+    <option value="Remoto">Remoto</option>
+
+     </select>
+   </fieldset>
+   <fieldset>
+    <button (click)="guardar()">Registro</button>
+   </fieldset>
+</section>
